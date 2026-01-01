@@ -6,6 +6,7 @@ import (
 )
 
 func main(){
+	// 省略は関数内でしか利用できない。
 	var num int = 1
 	var str string = "太郎"
 	fmt.Println(num, str)
@@ -29,7 +30,7 @@ func main(){
 	// 同時宣言
 
 	// var x, y, z int = 1, 2, 3
-	
+
 	// 省略ならこうでも書ける
 	x, y, z  := 1, 2, 3 
 	
@@ -40,4 +41,6 @@ func main(){
 	// )
 	fmt.Printf("x, y, z = ( %d, %d, %d )", x, y, z)
 
+	// const 定数
+	// 型変換　float64(integer) て感じでメソッド？がある。　したい型(変数) 未使用の変数があるとコンパイルエラーになる
 }
